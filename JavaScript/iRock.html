@@ -1,11 +1,14 @@
 <html>
   <head>
     <title>IRock - Виртуальный любимец Rock</title>
+	<script src="rock.js"></script>
+	<script src="cookie.js></script>
    </head>
    
-  <body onload="alert('Hello, I ma your pet rock.');">
+  <body onload="alert('Hello, I am your pet rock.');resizeRock();" onresize="resizeRock();">
     <div style="margin-top:100px; text-align:center">
-      <img id="rockImg" src="rock.png" alt="iRock" />
+      <img id="rockImg" src="rock.png" alt="iRock style="cursor:pointer"
+		onclick="touchRock()"/>
     </div>
   </body>
 </html>
